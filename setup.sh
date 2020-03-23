@@ -30,18 +30,12 @@ git clone https://github.com/kappyhappy/open-pull-request-URL.git
 cp open-pull-request-URL/pr /usr/local/bin/pr
 rm -rf open-pull-request-URL
 
-# install tfenv
-git clone https://github.com/tfutils/tfenv.git $HOME/.tfenv
-
 # install goenv
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 mkdir $HOME/go
 
-# install pyenv
-git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
-
-# install rbenv
-brew install rbenv ruby-build
+# install other env
+brew install tfenv pyenv rbenv ruby-build
 
 # instal kubens
 brew install kubectx

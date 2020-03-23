@@ -39,15 +39,6 @@ eval "$(goenv init -)"
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
-## tfenv settings
-export PATH="$HOME/.tfenv/bin:$PATH"
-
-## pyenv settings
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 #
 # Example aliases
 alias ll="ls -laG"
