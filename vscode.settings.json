@@ -1,0 +1,155 @@
+{
+    //https://qiita.com/yam86/items/0758d8ebae186d09fdc9
+    "editor.renderWhitespace": "all",
+    "files.trimTrailingWhitespace": true,
+
+    //vim設定
+    "vim.useSystemClipboard":true,
+    // "vim.cmdLineInitialColon": true,
+    "vim.hlsearch": true,
+    "vim.easymotion": true,
+    "vim.visualstar": true,
+    "vim.ignorecase": true,
+    "vim.incsearch": true,
+    "vim.useCtrlKeys": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                ":"
+            ]
+        },
+        {
+            "before": [
+                ":"
+            ],
+            "after": [
+                ";"
+            ]
+        },
+        {
+            "before": [
+                "O"
+            ],
+            "commands": [
+                "editor.action.insertLineAfter"
+            ]
+        },
+	    // {
+		//     "before": [
+		// 	    "w"
+		//     ],
+		//     "commands": [
+		// 	    "extension.cursorNextWordEndJa"
+		//     ]
+	    // },
+	    // {
+		//     "before": [
+		// 	    "e"
+		//     ],
+		//     "commands": [
+		// 	    "extension.cursorNextWordEndJa"
+		//     ]
+	    // },
+	    // {
+		//     "before": [
+		// 	    "b"
+		//     ],
+		//     "commands": [
+		// 	    "extension.cursorPrevWordStartJa"
+		//     ]
+	    // },
+        {
+            "before": ["q","w"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["q","q"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": ["Q","Q"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "g",
+                "b"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                ":"
+            ]
+        },
+        {
+            "before": [
+                ":"
+            ],
+            "after": [
+                ";"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "g",
+                "b"
+            ]
+        }
+    ],
+    //jjでノーマルモードに入る
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    //golang関連設定
+    "go.docsTool": "gogetdoc",
+    "go.useLanguageServer": true,
+    // "go.languageServerExperimentalFeatures": {
+    //     "format": true,
+    //     "autoComplete": true
+    // },
+    "go.formatTool": "goimports",
+    "go.toolsEnvVars": {"GO111MODULE": "on"},
+    // "go.inferGopath" : true,
+    "go.autocompleteUnimportedPackages": true,
+}
