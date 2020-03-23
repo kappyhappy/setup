@@ -142,14 +142,20 @@
     ],
 
     //golang関連設定
-    "go.docsTool": "gogetdoc",
-    "go.useLanguageServer": true,
-    // "go.languageServerExperimentalFeatures": {
-    //     "format": true,
-    //     "autoComplete": true
-    // },
-    "go.formatTool": "goimports",
-    "go.toolsEnvVars": {"GO111MODULE": "on"},
-    // "go.inferGopath" : true,
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true
+    },
     "go.autocompleteUnimportedPackages": true,
+    "go.docsTool": "gogetdoc",
+    "go.lintOnSave": "file",
+    "go.formatTool": "gofmt",
+    "go.lintTool": "golint",
+    "go.addTags": {
+        "tags": "db",
+        "options": "",
+        "promptForTags": false,
+        "transform": "snakecase"
+    },
+    "go.useLanguageServer": true
 }
