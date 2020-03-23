@@ -1,0 +1,12 @@
+chrome
+docker
+vscode
+flux
+hyperswitch
+iterm2
+slack
+chatwork
+zoom
+lastpass
+
+remote desktop(app store)
