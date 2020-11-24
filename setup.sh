@@ -26,7 +26,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/
 git clone https://raw.githubusercontent.com/kappyhappy/setup/master/.zshrc $HOME/.zshrc
 
 # pr jumper
-git clone https://github.com/kappyhappy/open-pull-request-URL.git 
+git clone https://github.com/kappyhappy/open-pull-request-URL.git
 cp open-pull-request-URL/pr /usr/local/bin/pr
 rm -rf open-pull-request-URL
 
@@ -39,5 +39,8 @@ brew install tfenv pyenv rbenv ruby-build
 
 # instal kubens
 brew install kubectx
+
+# instal tmux
+brew install tmux
 
 source $HOME/.zshrc
