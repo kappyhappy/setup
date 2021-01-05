@@ -43,4 +43,7 @@ brew install kubectx
 # instal tmux
 brew install tmux
 
+# instal jq
+brew install jq
+
 source $HOME/.zshrc
