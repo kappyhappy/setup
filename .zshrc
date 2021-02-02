@@ -39,7 +39,10 @@ eval "$(goenv init -)"
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
-#
+## nodenv settings
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
 # Example aliases
 alias ll="ls -laG"
 alias tf="terraform"
