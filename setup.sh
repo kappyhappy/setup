@@ -35,7 +35,7 @@ git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 mkdir $HOME/go
 
 # install other env
-brew install tfenv pyenv rbenv ruby-build
+brew install tfenv pyenv rbenv ruby-build nodenv
 
 # instal kubens
 brew install kubectx
