@@ -34,6 +34,11 @@ rm -rf open-pull-request-URL
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 mkdir $HOME/go
 
+# install nodenv
+git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+mkdir -p "$(nodenv root)"/plugins
+git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
+
 # install other env
 brew install tfenv pyenv rbenv ruby-build nodenv
 
