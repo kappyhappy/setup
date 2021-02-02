@@ -5,7 +5,6 @@ flux
 hyperswitch
 iterm2
 slack
-chatwork
 zoom
 lastpass
 
