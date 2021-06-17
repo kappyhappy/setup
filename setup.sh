@@ -51,4 +51,7 @@ brew install tmux
 # instal jq
 brew install jq
 
+# install corretto
+brew cask install corretto
+
 source $HOME/.zshrc
