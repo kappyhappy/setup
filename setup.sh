@@ -14,7 +14,7 @@ chmod 755 installer.sh
 rm installer.sh
 
 git clone https://raw.githubusercontent.com/kappyhappy/setup/master/.vimrc $HOME/.vimrc
-git clone https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim $HOME/.vim/colors/hybrid.vim
+git clone https://raw.githubusercontent.com/kappyhappy/setup/master/hybrid.vim $HOME/.vim/colors/hybrid.vim
 
 # zsh setup
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -33,11 +33,6 @@ rm -rf open-pull-request-URL
 # install goenv
 git clone https://github.com/syndbg/goenv.git $HOME/.goenv
 mkdir $HOME/go
-
-# install nodenv
-git clone https://github.com/nodenv/nodenv.git ~/.nodenv
-mkdir -p "$(nodenv root)"/plugins
-git clone https://github.com/nodenv/node-build.git "$(nodenv root)"/plugins/node-build
 
 # install other env
 brew install tfenv pyenv rbenv ruby-build nodenv
