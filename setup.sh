@@ -50,3 +50,7 @@ brew install jq
 brew cask install corretto
 
 source $HOME/.zshrc
+
+# install aws cli for Mac
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
